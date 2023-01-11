@@ -1,0 +1,148 @@
+
+
+section:first-child {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  section:first-child header {
+    width: clamp(70%, 80%, 1320px);
+    /* width: 100%; */
+    margin: 62px auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section:first-child header .logo {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  section:first-child header .logo span {
+    font-size: clamp(1rem, 1rem + 1vw, 2.4rem);
+    font-style: italic;
+    font-weight: 500;
+  }
+  section:first-child header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 48px;
+  }
+  section:first-child header nav ul a {
+    font-size: 16px;
+    text-decoration: none;
+    opacity: 0.6;
+    color: white;
+    transition: all 0.8s;
+    
+  }
+  section:first-child header nav ul a:hover{
+    opacity: 1;
+    font-weight: 1000;
+   
+  }
+  section:first-child header a button {
+    color: #293241;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 14px 24px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+  }
+  section:first-child main {
+    text-align: center;
+    max-width: clamp(70%, 80%, 1320px);
+    width: 100%;
+    margin: 0 auto;
+  }
+  section:first-child main p {
+    line-height: 25px;
+    font-size: 24px;
+    margin-top: 92px;
+    opacity: 0.6;
+    font-size: clamp(0.8rem, 0.7rem + 1vw, 1.5rem);
+  }
+  section:first-child main h1 {
+    margin-top: 28px;
+    font-weight: 700;
+    font-size: clamp(1.5rem, 1rem + 2vw, 4.5rem);
+    line-height: 138%;
+  }
+  section:first-child main .email-wrapper {
+    width: clamp(300px, 60%, 600px);
+    border: 1px solid white;
+    display: flex;
+    margin: 32px auto 0;
+    border-radius: 1000px;
+  }
+  section:first-child main .email-wrapper input {
+    background-color: transparent;
+    flex: 1;
+    border: none;
+    outline: none;
+    text-indent: 48px;
+    color: white;
+    font-size: clamp(12px, 0.5rem + 1vw, 19px);
+  }
+  section:first-child main .email-wrapper input::placeholder {
+    color: white;
+  }
+  section:first-child main .email-wrapper button {
+    border-radius: 1000px;
+    border: none;
+    font-weight: 700;
+    font-size: clamp(12px, 0.5rem + 1vw, 19px);
+    line-height: 21px;
+    padding: 30px 40px;
+    color: #293241;
+  }
+  section:first-child .dashboard-img {
+    
+    width: clamp(70%, 90%, 1320px);
+    margin: 100px auto 0;
+    box-shadow: 0px 170px 98px -130px rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+  }
+  section:first-child .dashboard-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .img-background{
+    background: url(../assets/section1/rectangle2.png), url(../assets/section1/rectangle1.png);
+    background-repeat: no-repeat;
+    background-position: 0 0, 100% 0;
+    z-index: -1;
+    background-color: #0D1728;
+    width: 100%;
+    height: 82.5%;
+    position: absolute;
+  }
+
+
+  @media (max-width:1024px){
+    section:first-child header nav ul{
+      gap: 25px;
+    }
+    section:first-child header nav ul a {
+      font-size: 14px;
+    }
+    section:first-child header a button {
+      font-size: 14px;
+      padding: 12px;
+    }
+
+    section:first-child main .email-wrapper button{
+      padding: 16px;
+    }
+
+  }
+  @media (max-width:768px){
+    section:first-child header nav ul{
+      display: none;
+    }
+
+  }

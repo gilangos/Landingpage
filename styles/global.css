@@ -1,0 +1,30 @@
+@import 'section1.css';
+@import 'section2.css';
+@import 'section3.css';
+@import 'section4.css';
+@import 'section5.css';
+@import 'section6.css';
+@import 'section7.css';
+@import 'footer.css';
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Anybody', cursive;
+  font-weight: 400;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.app {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  color: white;
+}
+
+
+/*# sourceMappingURL=global.css.map */
