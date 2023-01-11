@@ -1,5 +1,5 @@
 <h1 align="center">
-  Landing Page
+  Landing Page preview
 </h1>
 
 <p align="center">
