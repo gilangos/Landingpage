@@ -1,17 +1,107 @@
-footer {
-  background-color: bisque;
-}
 footer main {
-  padding: 70px 0px 30px 0px;
+  padding: 70px 0px 32px 0px;
   max-width: 1320px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
-  border-top: 1px solid black;
+  gap: 172px;
+  border-top: 1px solid #EAEBEC;
+}
+@media (max-width: 1366px) {
+  footer main {
+    gap: 130px;
+    width: 90%;
+  }
+}
+@media (max-width: 1024px) {
+  footer main {
+    gap: 100px;
+  }
+}
+@media (max-width: 768px) {
+  footer main {
+    flex-direction: column;
+  }
+}
+footer main .cop-wrapper .logo-wp {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+footer main .cop-wrapper .logo-wp span:first-child {
+  color: rgb(255, 255, 255);
+  font-size: 38px;
+  font-family: "Stick No Bills", sans-serif;
+  font-weight: 800;
+  background: #293241;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 6px 20px;
+}
+footer main .cop-wrapper .logo-wp span:nth-child(2) {
+  font-size: 38px;
+  font-style: italic;
+  font-weight: 500;
+  color: #293241;
+}
+footer main .cop-wrapper p {
+  font-size: clamp(0.8rem, 0.7rem + 2vw, 18px);
+  line-height: 32px;
+  color: #7f848d;
+  margin-top: 15px;
+  margin-bottom: 24px;
+  max-width: 400px;
+  text-align: left;
+}
+footer main .cop-wrapper #copy {
+  font-size: 18px;
+  color: #293241;
+  line-height: 32px;
+  margin-top: 50px;
 }
 footer main ul {
   flex: 1;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+footer main ul li a {
+  text-decoration: none;
+  color: #7F848D;
+  font-size: 16px;
+  transition: all 0.4s;
+}
+footer main ul li a:hover {
+  color: black;
+}
+@media (max-width: 1024px) {
+  footer main ul li a {
+    font-size: 14px;
+  }
+}
+footer main .social-wrapper strong {
+  font-size: 16px;
+  font-weight: 700;
+  color: #293241;
+}
+footer main .social-wrapper .social-icons {
+  margin-top: 18px;
+  display: flex;
+  gap: 16px;
+}
+footer main .social-wrapper .social-icons a {
+  background: #EAEBEC;
+  padding: 10px;
+  color: white;
+  border-radius: 8px;
+  transition: color 0.5s;
+}
+footer main .social-wrapper .social-icons a:nth-child(-n+2) {
+  padding-inline: 14px;
+}
+footer main .social-wrapper .social-icons a:hover {
+  color: #293241;
+  outline: 2px solid rgb(29, 72, 152);
 }
 
 /*# sourceMappingURL=footer.css.map */

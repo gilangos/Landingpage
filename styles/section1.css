@@ -30,14 +30,32 @@ section:first-child {
     display: flex;
     gap: 48px;
   }
-  section:first-child header nav ul a {
+  section:first-child header nav ul li a {
     font-size: 16px;
     text-decoration: none;
     opacity: 0.6;
     color: white;
-    transition: all 0.8s;
+    transition: all 0.4s;
+    position: relative;
     
   }
+  section:first-child header nav ul li a:after{
+    content: '';
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -4px;
+    margin: 0 auto;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: all 0.6s;
+  }
+
+  section:first-child header nav ul a:hover:after{
+    width: 100%;
+  }
+
   section:first-child header nav ul a:hover{
     opacity: 1;
     font-weight: 1000;
@@ -50,7 +68,17 @@ section:first-child {
     padding: 14px 24px;
     background-color: #FFFFFF;
     border-radius: 15px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.4s;
   }
+  section:first-child header a button:hover {
+    transform: scale(1.05);
+    
+  }
+
+
+
   section:first-child main {
     text-align: center;
     max-width: clamp(70%, 80%, 1320px);
@@ -97,6 +125,7 @@ section:first-child {
     line-height: 21px;
     padding: 30px 40px;
     color: #293241;
+    cursor: pointer;
   }
   section:first-child .dashboard-img {
     

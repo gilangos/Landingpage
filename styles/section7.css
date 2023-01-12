@@ -15,11 +15,14 @@ section:nth-child(7) main {
   border-radius: 40px;
   overflow: hidden;
 }
-@media (max-width: 1280px) {
+
+
+@media (max-width: 1366px) {
   section:nth-child(7) main {
     width: 90%;
   }
 }
+
 @media (max-width: 768px) {
   section:nth-child(7) main {
     flex-direction: column;
@@ -75,6 +78,7 @@ section:nth-child(7) main .img-wrapper {
 section:nth-child(7) main .img-wrapper img {
   width: 100%;
   height: 100%;
+  
 }
 @media (max-width: 768px) {
   section:nth-child(7) main .img-wrapper {
