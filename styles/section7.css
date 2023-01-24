@@ -27,7 +27,7 @@ section:nth-child(7) main {
   section:nth-child(7) main {
     flex-direction: column;
     padding-top: 30px;
-    width: 80%;
+    /* width: 95%; */
   }
 }
 section:nth-child(7) main .info-container {
@@ -83,6 +83,16 @@ section:nth-child(7) main .img-wrapper img {
 @media (max-width: 768px) {
   section:nth-child(7) main .img-wrapper {
     width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  section:nth-child(7) main .info-container h1{
+    line-height: 50px;
+  }
+  section:nth-child(7) main .info-container p{
+    line-height: 25px;
+    font-size: 16px;
   }
 }
 

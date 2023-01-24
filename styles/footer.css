@@ -1,3 +1,7 @@
+footer {
+  background-image: url(../assets/footer/Shap.png);
+  background-repeat: no-repeat;
+}
 footer main {
   padding: 70px 0px 32px 0px;
   max-width: 1320px;
@@ -8,24 +12,30 @@ footer main {
 }
 @media (max-width: 1366px) {
   footer main {
-    gap: 130px;
+    gap: 120px;
     width: 90%;
   }
 }
 @media (max-width: 1024px) {
   footer main {
-    gap: 100px;
+    gap: 40px;
   }
 }
 @media (max-width: 768px) {
   footer main {
-    flex-direction: column;
+    display: grid;
+    gap: 50px;
+    grid-template-areas: "ul2 ul" "cop social";
   }
+}
+footer main .cop-wrapper {
+  grid-area: cop;
 }
 footer main .cop-wrapper .logo-wp {
   display: flex;
   align-items: center;
   gap: 8px;
+  margin-bottom: 15px;
 }
 footer main .cop-wrapper .logo-wp span:first-child {
   color: rgb(255, 255, 255);
@@ -37,26 +47,45 @@ footer main .cop-wrapper .logo-wp span:first-child {
   display: inline-block;
   padding: 6px 20px;
 }
+@media (max-width: 768px) {
+  footer main .cop-wrapper .logo-wp span:first-child:first-child {
+    font-size: 28px;
+    padding: 5px 15px;
+  }
+}
 footer main .cop-wrapper .logo-wp span:nth-child(2) {
-  font-size: 38px;
+  font-size: clamp(1rem, 1rem + 1vw, 2.4rem);
   font-style: italic;
-  font-weight: 500;
+  font-weight: 600;
   color: #293241;
 }
 footer main .cop-wrapper p {
-  font-size: clamp(0.8rem, 0.7rem + 2vw, 18px);
+  font-size: 18px;
   line-height: 32px;
   color: #7f848d;
-  margin-top: 15px;
-  margin-bottom: 24px;
   max-width: 400px;
   text-align: left;
+}
+@media (max-width: 768px) {
+  footer main .cop-wrapper p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  footer main .cop-wrapper p #copy {
+    font-size: 14px;
+  }
 }
 footer main .cop-wrapper #copy {
   font-size: 18px;
   color: #293241;
   line-height: 32px;
-  margin-top: 50px;
+  margin-top: 24px;
+}
+@media (max-width: 768px) {
+  footer main .cop-wrapper #copy {
+    font-size: 14px;
+  }
 }
 footer main ul {
   flex: 1;
@@ -64,6 +93,7 @@ footer main ul {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  grid-area: ul;
 }
 footer main ul li a {
   text-decoration: none;
@@ -79,6 +109,12 @@ footer main ul li a:hover {
     font-size: 14px;
   }
 }
+footer main ul:nth-child(2) {
+  grid-area: ul2;
+}
+footer main .social-wrapper {
+  grid-area: "social";
+}
 footer main .social-wrapper strong {
   font-size: 16px;
   font-weight: 700;
@@ -88,6 +124,7 @@ footer main .social-wrapper .social-icons {
   margin-top: 18px;
   display: flex;
   gap: 16px;
+  grid-area: social;
 }
 footer main .social-wrapper .social-icons a {
   background: #EAEBEC;

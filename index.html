@@ -18,11 +18,11 @@
   </head>
   <body>
     <div class="app">
-      <section id="#home">
+      <section id="home" ancor="home" >
         <div class="img-background"></div>
         <header>
           <div class="logo">
-            <img src="./assets/section1/logo.png" alt="logo" />
+            <span>N</span>
             <span>NftX</span>
           </div>
           <nav>
@@ -32,9 +32,16 @@
               <li><a href="#whotowork">Who to work</a></li>
               <li><a href="#pricing">Pricing</a></li>
               <li><a href="#reviews">Reviews</a></li>
+              <li><a class="btn" href="#"><button>Start free 14 trial <i class="fa-solid fa-arrow-right"></i></button></a></li>
             </ul>
           </nav>
-          <a href="#"><button>Start free 14 trial <i class="fa-solid fa-arrow-right"></i></button></a>
+          <a class="btn" href="#"><button>Start free 14 trial <i class="fa-solid fa-arrow-right"></i></button></a>
+
+          <button class="btn-mob" onclick="handleButton()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </header>
 
         <main>
@@ -60,7 +67,7 @@
         </div>
       </section>
 
-      <section id="feature">
+      <section id="feature" ancor="feature">
         <h1>
           Customers have consistently <br />
           rated Around 4.7/5 stars
@@ -78,7 +85,7 @@
               Maecenas convallis non sapien in commodo. Nulla semper pulvinar
               luctus.Proin luctus.
             </p>
-            <img src="./assets/section2/amazon.png" alt="" />
+            <img src="./assets/section2/google.png" alt="" />
           </div>
 
           <div class="rating-card">
@@ -108,7 +115,7 @@
               Maecenas convallis non sapien in commodo. Nulla semper pulvinar
               luctus.Proin luctus.
             </p>
-            <img src="./assets/section2/amazon.png" alt="" />
+            <img src="./assets/section2/Vector.png" alt="" />
           </div>
         </div>
       </section>
@@ -185,7 +192,7 @@
         </div>
       </section>
 
-      <section id="whotowork">
+      <section id="whotowork" ancor="whotowork">
         <main>
           <div class="analytise-wrapper">
             <button>Analytise</button>
@@ -215,18 +222,18 @@
           </div>
           <div class="graphic-cards">
             <div class="card">
-              <img src="./assets/section4/Rectangle 12.png" alt="" />
+              <img src="./assets/section4/graph2.png" alt="" />
             </div>
             <div class="card">
               <img src="./assets/section4/Rectangle 12.png" alt="" />
             </div>
             <div class="card">
-              <img src="./assets/section4/Rectangle 12.png" alt="" />
+              <img src="./assets/section4/Graph.png" alt="" />
             </div>
           </div>
         </main>
       </section>
-      <section id="pricing">
+      <section id="pricing" ancor="pricing">
         <div class="content-container">
           <h1>Pricing</h1>
           <p class="description">Using basic skill you can improve your business stuff with Around</p>
@@ -348,7 +355,7 @@
           </div>
         </div>
       </section>
-      <section id="reviews">
+      <section id="reviews" ancor="reviews"">
         <h1>Testimonial</h1>
         <p>Using basic skills you can improve your business stuff with Around</p>
         <div class="reviews-wrapper">
@@ -397,7 +404,7 @@
               <span>NFtX</span>
             </div>
             <p>Nulla facilisi. Vestibulum non est nisl. Donec eget sodales nisl. Donec ut velit erat. </p>
-            <span id="copy">&copy; 2022 All rights reserved.</span>
+            <p id="copy">&copy; 2022 All rights reserved.</p>
           </div>
           <ul>
             <li><a href="">Explore</a></li>

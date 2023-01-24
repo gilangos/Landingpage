@@ -21,7 +21,7 @@ section:nth-child(2) {
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+    gap: 50px;
   }
   section:nth-child(2) .customers-rating .rating-card .rating-stars {
     display: flex;

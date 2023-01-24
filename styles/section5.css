@@ -14,6 +14,7 @@ section:nth-child(5) .content-container h1 {
   font-weight: 700;
   line-height: 48px;
   margin-bottom: 32px;
+  margin-top: 5px;
   text-align: center;
 }
 section:nth-child(5) .content-container .description {
@@ -21,6 +22,7 @@ section:nth-child(5) .content-container .description {
   margin-bottom: 74px;
   color: #7F848D;
   text-align: center;
+  line-height: 2rem;
 }
 section:nth-child(5) .content-container .pricing-cards-wrapper {
   display: flex;

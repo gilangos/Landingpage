@@ -74,16 +74,23 @@
     align-items: center;
   }
 }
+
+
+#reviews .reviews-wrapper .cards-wrapper .user-card .user-img {
+  width: 100%;
+  max-width: 315px;
+}
+
 @media (max-width: 768px) {
   #reviews .reviews-wrapper .cards-wrapper .user-card {
     flex-direction: column;
     padding: 20px;
   }
+  #reviews .reviews-wrapper .cards-wrapper .user-card .user-img{
+    max-width: 100%;
+  }
 }
-#reviews .reviews-wrapper .cards-wrapper .user-card .user-img {
-  width: 100%;
-  max-width: 315px;
-}
+
 #reviews .reviews-wrapper .cards-wrapper .user-card .user-img img {
   width: 100%;
 }

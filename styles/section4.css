@@ -136,6 +136,7 @@ section:nth-child(4) {
   @media (max-width:768px){
     section:nth-child(4) main{
       grid-template-columns: 1fr;
+      gap: 35px;
     }
 
     section:nth-child(4) main .graphic-cards{
