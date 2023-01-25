@@ -29,7 +29,14 @@
 #reviews .reviews-wrapper {
   max-width: 1320px;
   margin: 0 auto;
+  transform:  translate(-100vw);
+  transition: all 1s;
 }
+
+
+
+
+
 @media (max-width: 1440px) {
   #reviews .reviews-wrapper {
     width: 90%;
@@ -153,7 +160,7 @@
   height: 10px;
   background: #EAEBEC;
 }
-#reviews .circles span:first-child {
+#reviews .circles span.active {
   background-color: #114fbb;
 }
 

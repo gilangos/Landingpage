@@ -13,6 +13,8 @@ section:nth-child(4) {
   }
   section:nth-child(4) main .analytise-wrapper {
     padding: 90px 0;
+    transform:  translate(-100vw);
+    transition: all 1s;
   }
   section:nth-child(4) main .analytise-wrapper button {
     font-size: 16px;
@@ -81,7 +83,8 @@ section:nth-child(4) {
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
     gap: 24px;
-    
+    transform:  translate(100vw);
+    transition: all 1s;
   }
   section:nth-child(4) main .graphic-cards .card {
    
@@ -113,6 +116,7 @@ section:nth-child(4) {
 
     section:nth-child(4) main .analytise-wrapper {
       padding: 20px 0;
+      
     }
 
     section:nth-child(4) main .graphic-cards .card{

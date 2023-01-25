@@ -1,0 +1,12 @@
+
+section:nth-child(3) .instructions.active,
+section:nth-child(3) .user-graphics .users-card-wrapper.active,
+section:nth-child(3) .user-graphics .custom-data-info.active,
+section:nth-child(4) main .analytise-wrapper.active,
+section:nth-child(4) main .graphic-cards.active,
+section:nth-child(5) .content-container.active,
+#reviews .reviews-wrapper.active,
+section:nth-child(7) main.active{
+    transform:  translate(0);
+}
+

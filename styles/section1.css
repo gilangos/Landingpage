@@ -229,7 +229,6 @@ section:first-child {
     section:first-child header nav ul{
       position: fixed;
       inset: 0;
-      
       z-index: 10;
       background-color: rgba(0,0,0,0.4);
       backdrop-filter: blur(8px);
@@ -238,15 +237,18 @@ section:first-child {
       align-items: center;
       justify-content: center;
       transform: translate(100vw);
+      
     }
-
+    section:first-child header nav ul li a{
+      opacity: 1;
+    }
     section:first-child header > a{
        display: none;
     }
 
     section:first-child header nav ul li:last-child{
       display: block;
-      margin: 100px;
+      margin-top: 100px;
     }
     
     .btn-mob{

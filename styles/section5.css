@@ -6,6 +6,8 @@ section:nth-child(5) {
 section:nth-child(5) .content-container {
   width: clamp(70%, 80%, 1320px);
   margin: 0 auto;
+  transform:  translate(100vw);
+  transition: all 1s;
 }
 section:nth-child(5) .content-container h1 {
   color: #293241;
