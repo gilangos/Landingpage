@@ -239,6 +239,11 @@ section:first-child {
       transform: translate(100vw);
       
     }
+
+    ::-webkit-scrollbar{
+      display: none;
+    }
+
     section:first-child header nav ul li a{
       opacity: 1;
     }
@@ -254,7 +259,9 @@ section:first-child {
     .btn-mob{
       display: flex;
       
-      right: 50px;
+    }
+    .btn-mob:hover{
+      cursor: pointer;
     }
 
     section:first-child header nav ul.active{
