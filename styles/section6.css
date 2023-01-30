@@ -42,6 +42,7 @@
     width: 90%;
   }
 }
+
 #reviews .reviews-wrapper .cards-wrapper {
   display: flex;
   align-items: center;
@@ -50,7 +51,9 @@
 @media (max-width: 768px) {
   #reviews .reviews-wrapper .cards-wrapper {
     gap: 30px;
-    padding-inline: 20px;
+  }
+  #reviews .reviews-wrapper {
+    width: 98%;
   }
 }
 #reviews .reviews-wrapper .cards-wrapper button {

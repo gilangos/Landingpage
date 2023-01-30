@@ -84,7 +84,13 @@ section:nth-child(3) {
     align-items: center;
     gap: 10px;
   }
-
+  
+  @media (max-width:420px) {
+    section:nth-child(3) .user-graphics .users-card-wrapper .user-card{
+      width: 100%;
+    }
+  }
+  
   section:nth-child(3) .user-graphics .users-card-wrapper .user-card .avatar {
     display: flex;
     align-items: center;
@@ -147,6 +153,7 @@ section:nth-child(3) {
   @media (max-width:1024px){
     section:nth-child(3) .user-graphics{
       grid-template-columns: 1fr;
+      place-content: center;
       margin: 90px auto 0;
     }
     section:nth-child(3) .user-graphics .users-card-wrapper {

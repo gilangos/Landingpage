@@ -57,6 +57,12 @@ section:nth-child(5) .content-container .pricing-cards-wrapper .card.blue .price
   font-size: 14px;
   line-height: 17px;
 }
+
+@media (max-width:465px) {
+  section:nth-child(5) .content-container .pricing-cards-wrapper .card.blue .price-wrapper span::after{
+    display: none;
+  }
+}
 section:nth-child(5) .content-container .pricing-cards-wrapper .card.blue button {
   color: #1681FE;
   border: 1.5px solid #1681FE;
@@ -298,7 +304,6 @@ section:nth-child(5) .content-container .pricing-cards-wrapper .card.green butto
   section:nth-child(5) .content-container .pricing-cards-wrapper .card button{
     margin-top: 20px;
   }
-
 
 }
 
